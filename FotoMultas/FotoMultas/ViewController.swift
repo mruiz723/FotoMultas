@@ -9,7 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: - Properties
+    @IBOutlet weak var usernameTextField: UITextField!
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    //MARK: - IBActions
+    
+    @IBAction func login(sender: AnyObject) {
+    
+    }
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
