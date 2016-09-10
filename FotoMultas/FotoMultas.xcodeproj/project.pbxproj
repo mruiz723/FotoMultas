@@ -13,6 +13,8 @@
 		FA761E571D67EB60006C43EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA761E561D67EB60006C43EC /* Assets.xcassets */; };
 		FA761E5A1D67EB60006C43EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA761E581D67EB60006C43EC /* LaunchScreen.storyboard */; };
 		FA9464ED1D71279000BCDB90 /* MultasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9464EC1D71279000BCDB90 /* MultasViewController.swift */; };
+		FA967C841D838972008FF85D /* fotoMulta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA967C831D838972008FF85D /* fotoMulta.jpg */; };
+		FA967C861D838A08008FF85D /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA967C851D838A08008FF85D /* Ticket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FA761E591D67EB60006C43EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA761E5B1D67EB60006C43EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA9464EC1D71279000BCDB90 /* MultasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultasViewController.swift; sourceTree = "<group>"; };
+		FA967C831D838972008FF85D /* fotoMulta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fotoMulta.jpg; sourceTree = "<group>"; };
+		FA967C851D838A08008FF85D /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		FA761E4E1D67EB60006C43EC /* FotoMultas */ = {
 			isa = PBXGroup;
 			children = (
+				FA967C821D838941008FF85D /* resources */,
 				FA761E4F1D67EB60006C43EC /* AppDelegate.swift */,
 				FA761E511D67EB60006C43EC /* ViewController.swift */,
 				FA761E531D67EB60006C43EC /* Main.storyboard */,
@@ -63,8 +68,17 @@
 				FA761E581D67EB60006C43EC /* LaunchScreen.storyboard */,
 				FA761E5B1D67EB60006C43EC /* Info.plist */,
 				FA9464EC1D71279000BCDB90 /* MultasViewController.swift */,
+				FA967C851D838A08008FF85D /* Ticket.swift */,
 			);
 			path = FotoMultas;
+			sourceTree = "<group>";
+		};
+		FA967C821D838941008FF85D /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA967C831D838972008FF85D /* fotoMulta.jpg */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				FA761E5A1D67EB60006C43EC /* LaunchScreen.storyboard in Resources */,
 				FA761E571D67EB60006C43EC /* Assets.xcassets in Resources */,
 				FA761E551D67EB60006C43EC /* Main.storyboard in Resources */,
+				FA967C841D838972008FF85D /* fotoMulta.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				FA761E521D67EB60006C43EC /* ViewController.swift in Sources */,
 				FA761E501D67EB60006C43EC /* AppDelegate.swift in Sources */,
 				FA9464ED1D71279000BCDB90 /* MultasViewController.swift in Sources */,
+				FA967C861D838A08008FF85D /* Ticket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,12 +13,16 @@ class MultasViewController: UIViewController, UITableViewDataSource, UITableView
 //MARK: - Properties
     
     @IBOutlet weak var ticketTableView: UITableView!
+    var tickets = [Ticket]()
 
 //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        tickets = Ticket.tickets()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,13 +44,17 @@ class MultasViewController: UIViewController, UITableViewDataSource, UITableView
     // MARK: - UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return tickets.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        let ticket = tickets[indexPath.row]
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell")
-        cell?.textLabel?.text = "lo que sea"
+        cell?.textLabel?.text = ticket.name
+        cell?.detailTextLabel?.text = ticket.price
+        cell?.imageView?.image = UIImage(named: "fotoMulta.jpg")
         
         return cell!
     }
