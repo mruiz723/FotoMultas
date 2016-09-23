@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA3CF43B1D95EFB800149425 /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CF4391D95EFB800149425 /* TicketTableViewCell.swift */; };
+		FA3CF43C1D95EFB800149425 /* TicketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3CF43A1D95EFB800149425 /* TicketTableViewCell.xib */; };
 		FA761E501D67EB60006C43EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA761E4F1D67EB60006C43EC /* AppDelegate.swift */; };
 		FA761E521D67EB60006C43EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA761E511D67EB60006C43EC /* ViewController.swift */; };
 		FA761E551D67EB60006C43EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA761E531D67EB60006C43EC /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA3CF4391D95EFB800149425 /* TicketTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		FA3CF43A1D95EFB800149425 /* TicketTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TicketTableViewCell.xib; sourceTree = "<group>"; };
 		FA761E4C1D67EB5F006C43EC /* FotoMultas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FotoMultas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA761E4F1D67EB60006C43EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA761E511D67EB60006C43EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				FA761E5B1D67EB60006C43EC /* Info.plist */,
 				FA9464EC1D71279000BCDB90 /* MultasViewController.swift */,
 				FA967C851D838A08008FF85D /* Ticket.swift */,
+				FA3CF4391D95EFB800149425 /* TicketTableViewCell.swift */,
+				FA3CF43A1D95EFB800149425 /* TicketTableViewCell.xib */,
 			);
 			path = FotoMultas;
 			sourceTree = "<group>";
@@ -141,6 +147,7 @@
 			files = (
 				FA761E5A1D67EB60006C43EC /* LaunchScreen.storyboard in Resources */,
 				FA761E571D67EB60006C43EC /* Assets.xcassets in Resources */,
+				FA3CF43C1D95EFB800149425 /* TicketTableViewCell.xib in Resources */,
 				FA761E551D67EB60006C43EC /* Main.storyboard in Resources */,
 				FA967C841D838972008FF85D /* fotoMulta.jpg in Resources */,
 			);
@@ -155,6 +162,7 @@
 			files = (
 				FA761E521D67EB60006C43EC /* ViewController.swift in Sources */,
 				FA761E501D67EB60006C43EC /* AppDelegate.swift in Sources */,
+				FA3CF43B1D95EFB800149425 /* TicketTableViewCell.swift in Sources */,
 				FA9464ED1D71279000BCDB90 /* MultasViewController.swift in Sources */,
 				FA967C861D838A08008FF85D /* Ticket.swift in Sources */,
 			);

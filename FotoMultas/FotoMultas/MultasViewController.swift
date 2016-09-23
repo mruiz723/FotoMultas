@@ -20,7 +20,7 @@ class MultasViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        ticketTableView .registerNib(UINib (nibName: "TicketTableViewCell", bundle: nil), forCellReuseIdentifier: "ticketCell")
         tickets = Ticket.tickets()
         
     }
@@ -51,12 +51,12 @@ class MultasViewController: UIViewController, UITableViewDataSource, UITableView
         
         let ticket = tickets[indexPath.row]
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell")
-        cell?.textLabel?.text = ticket.name
-        cell?.detailTextLabel?.text = ticket.price
-        cell?.imageView?.image = UIImage(named: "fotoMulta.jpg")
+        let cell = tableView.dequeueReusableCellWithIdentifier("ticketCell") as! TicketTableViewCell
+        cell.nameLabel?.text = ticket.name
+        cell.priceLabel?.text = ticket.price
+        cell.ticketImageView?.image = UIImage(named: "fotoMulta.jpg")
         
-        return cell!
+        return cell
     }
     
     
