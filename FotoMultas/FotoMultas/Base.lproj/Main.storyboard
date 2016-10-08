@@ -8,7 +8,7 @@
         <!--Lista Fotomultas-->
         <scene sceneID="f9E-Y0-Nl8">
             <objects>
-                <viewController id="jyB-zh-dH9" customClass="MultasViewController" customModule="FotoMultas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="jyB-zh-dH9" customClass="MultasViewController" customModule="FotoMultas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ya2-G4-WoD"/>
                         <viewControllerLayoutGuide type="bottom" id="7W8-ea-xoG"/>
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="2nS-ui-tVW">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2nS-ui-tVW" id="W0l-Jf-BfV">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -48,11 +48,113 @@
                     <navigationItem key="navigationItem" title="Lista Fotomultas" id="sGi-Dk-Clj"/>
                     <connections>
                         <outlet property="ticketTableView" destination="yWj-oZ-haw" id="AXE-sH-a8j"/>
+                        <segue destination="xNo-wQ-1jF" kind="show" identifier="detail" id="tgr-YL-dxp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wxG-Ji-mye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1724" y="301"/>
+        </scene>
+        <!--Detalle Multa-->
+        <scene sceneID="wzg-9j-cWf">
+            <objects>
+                <viewController id="xNo-wQ-1jF" customClass="DetailTicketViewController" customModule="FotoMultas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NuL-Jf-oPd"/>
+                        <viewControllerLayoutGuide type="bottom" id="cEq-MI-rwu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6HC-D6-kHw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VfP-3M-Dpe">
+                                <rect key="frame" x="165" y="217" width="270" height="123"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="x6k-zv-MMh">
+                                        <rect key="frame" x="0.0" y="0.0" width="139" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VpN-KK-YHc">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18 Nov 2006" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-iL-Yjc">
+                                                <rect key="frame" x="61" y="0.0" width="78" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ssk-lC-z5I">
+                                        <rect key="frame" x="0.0" y="26" width="270" height="71"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infracción:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-JX-i5v">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LRJ-WE-FIX">
+                                                <rect key="frame" x="84" y="0.0" width="186" height="71"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="71" id="8Ug-zJ-DRY"/>
+                                                    <constraint firstAttribute="width" constant="186" id="sAD-oh-wCH"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="clr-7Y-id2">
+                                        <rect key="frame" x="0.0" y="107" width="126" height="16"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fit-ZQ-Rrj">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 685.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-jp-bYe">
+                                                <rect key="frame" x="62" y="0.0" width="64" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lGG-Wc-S5i">
+                                <rect key="frame" x="180" y="72" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="D28-K7-SrD"/>
+                                    <constraint firstAttribute="width" constant="240" id="zSV-ew-nzF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VfP-3M-Dpe" firstAttribute="top" secondItem="lGG-Wc-S5i" secondAttribute="bottom" constant="17" id="KM7-Uv-0jY"/>
+                            <constraint firstItem="lGG-Wc-S5i" firstAttribute="top" secondItem="NuL-Jf-oPd" secondAttribute="bottom" constant="8" id="VJr-Gy-QV9"/>
+                            <constraint firstItem="lGG-Wc-S5i" firstAttribute="centerX" secondItem="6HC-D6-kHw" secondAttribute="centerX" id="hjA-j7-UoP"/>
+                            <constraint firstItem="VfP-3M-Dpe" firstAttribute="centerX" secondItem="6HC-D6-kHw" secondAttribute="centerX" id="vk3-XQ-PRL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalle Multa" id="Oho-Z5-xFQ"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="5MX-iL-Yjc" id="4qA-iT-PTJ"/>
+                        <outlet property="descriptionTextView" destination="LRJ-WE-FIX" id="W4w-XN-2pD"/>
+                        <outlet property="priceLabel" destination="IZW-jp-bYe" id="hnS-QN-8Vq"/>
+                        <outlet property="ticketImage" destination="lGG-Wc-S5i" id="hIC-PX-WOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nRt-Mw-IFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="301"/>
         </scene>
         <!--Bienvenido Fotomultas-->
         <scene sceneID="tne-QT-ifu">
@@ -82,7 +184,6 @@
                                 </constraints>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mrg-CF-fpk"/>
                                     <segue destination="jyB-zh-dH9" kind="show" id="Q9A-sX-tza"/>
                                 </connections>
                             </button>

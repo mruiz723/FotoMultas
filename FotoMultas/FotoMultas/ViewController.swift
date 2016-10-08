@@ -17,9 +17,6 @@ class ViewController: UIViewController {
     
     //MARK: - IBActions
     
-    @IBAction func login(sender: AnyObject) {
-    
-    }
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -31,7 +28,33 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+        
+        if usernameTextField.text == "Juaco" && passwordTextField.text == "paquis" {
+            return true;
+        }else {
+            let alert = UIAlertController(title: "Login", message: "Credenciales invalidas", preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alert.addAction(okAction)
+            presentViewController(alert, animated: true, completion:nil)
+        }
+        
+        return false;
+    }
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 

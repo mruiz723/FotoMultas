@@ -59,6 +59,31 @@ class MultasViewController: UIViewController, UITableViewDataSource, UITableView
         return cell
     }
     
+    // MARK: - UITableViewDelegate
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let ticket = tickets[indexPath.row]
+        performSegueWithIdentifier("detail", sender: ticket)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if let detailTicketVC = segue.destinationViewController as? DetailTicketViewController {
+            
+            detailTicketVC.ticket = sender as? Ticket
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

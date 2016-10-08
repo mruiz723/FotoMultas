@@ -17,6 +17,7 @@
 		FA9464ED1D71279000BCDB90 /* MultasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9464EC1D71279000BCDB90 /* MultasViewController.swift */; };
 		FA967C841D838972008FF85D /* fotoMulta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FA967C831D838972008FF85D /* fotoMulta.jpg */; };
 		FA967C861D838A08008FF85D /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA967C851D838A08008FF85D /* Ticket.swift */; };
+		FAAAFEA41DA871A500E1F180 /* DetailTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAAFEA31DA871A500E1F180 /* DetailTicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA9464EC1D71279000BCDB90 /* MultasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultasViewController.swift; sourceTree = "<group>"; };
 		FA967C831D838972008FF85D /* fotoMulta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fotoMulta.jpg; sourceTree = "<group>"; };
 		FA967C851D838A08008FF85D /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		FAAAFEA31DA871A500E1F180 /* DetailTicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				FA967C851D838A08008FF85D /* Ticket.swift */,
 				FA3CF4391D95EFB800149425 /* TicketTableViewCell.swift */,
 				FA3CF43A1D95EFB800149425 /* TicketTableViewCell.xib */,
+				FAAAFEA31DA871A500E1F180 /* DetailTicketViewController.swift */,
 			);
 			path = FotoMultas;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				FA761E521D67EB60006C43EC /* ViewController.swift in Sources */,
 				FA761E501D67EB60006C43EC /* AppDelegate.swift in Sources */,
+				FAAAFEA41DA871A500E1F180 /* DetailTicketViewController.swift in Sources */,
 				FA3CF43B1D95EFB800149425 /* TicketTableViewCell.swift in Sources */,
 				FA9464ED1D71279000BCDB90 /* MultasViewController.swift in Sources */,
 				FA967C861D838A08008FF85D /* Ticket.swift in Sources */,
